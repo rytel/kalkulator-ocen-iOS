@@ -10,21 +10,35 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var gradesNumber: Int?
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var gradesTable: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        gradesTable.dataSource = self
+        
+        gradesTable.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func calculateButton(_ sender: UIButton) {
+        topLabel.text = "Tu pojawi się średnia"
     }
-    */
+}
 
+extension SecondViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gradesNumber ?? 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
+        //cell.textLabel?.text = gradeCell [indexPath.row].gradeNumber
+        cell.gradeNumber.text = "Ocena \(indexPath.row + 1)"
+        return cell
+        
+    }
+    
+    
 }

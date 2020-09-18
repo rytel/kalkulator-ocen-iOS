@@ -12,12 +12,12 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var gradesNumber: UILabel!
     @IBOutlet weak var gradesSlider: UISlider!
-    @IBOutlet weak var gradesAVG: UILabel!
     var sliderValue: Int = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gradesNumber.text = "Liczba ocen: \(sliderValue)"
+        gradesSlider.value = Float(sliderValue)
     }
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
@@ -30,5 +30,11 @@ class FirstViewController: UIViewController {
         self.performSegue(withIdentifier: "goToSecondVC", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSecondVC" {
+            let destinationVC = segue.destination as! SecondViewController
+            destinationVC.gradesNumber = sliderValue
+        }
+    }
     
 }
