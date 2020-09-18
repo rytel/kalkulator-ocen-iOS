@@ -9,19 +9,27 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var gradeNumber: UILabel!
     @IBOutlet weak var gradeSlider: UISlider!
     @IBOutlet weak var gradeValue: UILabel!
-    
+    var sliderValue: Int = 5
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        gradeSlider.value = 5
+        
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        gradeSlider.value = 5
+        
     }
+    @IBAction func setGrade(_ sender: UISlider) {
+        sliderValue = Int(sender.value)
+        gradeValue.text = "\(sliderValue)"
+        
+        
+    }
+    
     
 }

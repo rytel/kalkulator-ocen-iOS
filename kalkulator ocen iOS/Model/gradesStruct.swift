@@ -1,5 +1,5 @@
 //
-//  CellContent.swift
+//  gradesStruct.swift
 //  kalkulator ocen iOS
 //
 //  Created by Rafał Rytel on 18/09/2020.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct cellContent{
-    let gradeValue: String
+struct gradesStruct {
+    var gradesValueTable: [Int]
 }
+

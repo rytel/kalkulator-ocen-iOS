@@ -13,8 +13,7 @@ class SecondViewController: UIViewController {
     var gradesNumber: Int?
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var gradesTable: UITableView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         gradesTable.dataSource = self
@@ -23,7 +22,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func calculateButton(_ sender: UIButton) {
-        topLabel.text = "Tu pojawi się średnia"
+        topLabel.text = "Tu ma się pojawic srednia ocen"
     }
 }
 
@@ -34,11 +33,7 @@ extension SecondViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
-        //cell.textLabel?.text = gradeCell [indexPath.row].gradeNumber
-        cell.gradeNumber.text = "Ocena \(indexPath.row + 1)"
+        cell.gradeNumber.text = "Ocena \(indexPath.row+1)"
         return cell
-        
     }
-    
-    
 }
