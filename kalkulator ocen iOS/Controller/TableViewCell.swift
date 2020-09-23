@@ -13,7 +13,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var gradeNumber: UILabel!
     @IBOutlet weak var gradeSlider: UISlider!
     @IBOutlet weak var gradeValue: UILabel!
-    var sliderValue: Int = 5
+    var sliderValue: Int?
     override func awakeFromNib() {
         super.awakeFromNib()
         gradeSlider.value = 5
@@ -26,9 +26,8 @@ class TableViewCell: UITableViewCell {
     }
     @IBAction func setGrade(_ sender: UISlider) {
         sliderValue = Int(sender.value)
-        gradeValue.text = "\(sliderValue)"
-        
-        
+        gradeValue.text = "\(sliderValue!)"
+
     }
     
     

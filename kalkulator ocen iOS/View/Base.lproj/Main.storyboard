@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kQP-uv-ipn">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="kalkulator_ocen_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-1j-9w5">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzS-T0-lnT" userLabel="1">
-                                        <rect key="frame" x="20" y="0.0" width="280" height="130.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="560" height="138.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalkulator Ocen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsc-3s-H1P">
-                                                <rect key="frame" x="38" y="47" width="204.5" height="36"/>
+                                                <rect key="frame" x="178" y="51" width="204.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -36,10 +34,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLQ-PN-NMb" userLabel="2">
-                                        <rect key="frame" x="20" y="131.5" width="280" height="130"/>
+                                        <rect key="frame" x="20" y="139.5" width="560" height="138"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liczba Ocen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-eI-W4H">
-                                                <rect key="frame" x="56" y="47" width="168.5" height="36"/>
+                                                <rect key="frame" x="196" y="51" width="168.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -51,10 +49,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTr-82-AUa" userLabel="3">
-                                        <rect key="frame" x="20" y="262.5" width="280" height="130.5"/>
+                                        <rect key="frame" x="20" y="278.5" width="560" height="138.5"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-Fj-zzb">
-                                                <rect key="frame" x="18" y="50" width="244" height="31"/>
+                                                <rect key="frame" x="18" y="54" width="524" height="31"/>
                                                 <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGray3Color"/>
                                                 <connections>
@@ -70,10 +68,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-hj-Uh7" userLabel="4">
-                                        <rect key="frame" x="20" y="394" width="280" height="130"/>
+                                        <rect key="frame" x="20" y="418" width="560" height="138"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-6f-pEE">
-                                                <rect key="frame" x="97" y="41" width="86" height="48"/>
+                                                <rect key="frame" x="237" y="45" width="86" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,17 +124,17 @@
             <objects>
                 <viewController id="jgP-EJ-wwq" customClass="SecondViewController" customModule="kalkulator_ocen_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDk-04-0So">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Mt-w4-jYg">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-jO-cbh" userLabel="1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zaznacz oceny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-xF-Mnk">
-                                                <rect key="frame" x="62.5" y="7" width="195.5" height="36"/>
+                                                <rect key="frame" x="202.5" y="7" width="195.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -149,10 +147,10 @@
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QF-4r-Wdk">
-                                        <rect key="frame" x="0.0" y="51" width="320" height="422"/>
+                                        <rect key="frame" x="0.0" y="51" width="600" height="454"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-2b-mAL">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="422"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="454"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
                                         </subviews>
@@ -168,10 +166,10 @@
                                         <viewLayoutGuide key="frameLayoutGuide" id="OIu-lR-A27"/>
                                     </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-Cu-3do" userLabel="3">
-                                        <rect key="frame" x="0.0" y="474" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="506" width="600" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMa-3N-ezl">
-                                                <rect key="frame" x="117" y="1" width="86" height="48"/>
+                                                <rect key="frame" x="257" y="1" width="86" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,7 +207,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2jc-b7-Szy"/>
                     <connections>
-                        <outlet property="gradesTable" destination="eNw-2b-mAL" id="PYq-hz-1CT"/>
+                        <outlet property="gradesTableView" destination="eNw-2b-mAL" id="PYq-hz-1CT"/>
                         <outlet property="topLabel" destination="IQC-xF-Mnk" id="D8V-qg-nWE"/>
                     </connections>
                 </viewController>
