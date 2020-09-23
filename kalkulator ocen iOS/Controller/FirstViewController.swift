@@ -24,7 +24,6 @@ class FirstViewController: UIViewController {
         sliderValue = Int(sender.value)
         gradesNumber.text = "Liczba Ocen: \(sliderValue)"
     }
-    
 
     @IBAction func goToSecondViewButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToSecondVC", sender: self)
